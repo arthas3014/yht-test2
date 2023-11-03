@@ -18,7 +18,7 @@ pipeline {
                 AN_ACCESS_KEY = 'abc' 
             }
             steps {
-                echo 'hello word'
+                echo 'hello word!!'
                 sh 'printenv'
                 // 在此处添加构建任务的命令或脚本
             }
