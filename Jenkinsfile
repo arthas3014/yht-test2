@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Begin checkout...'
                 // 在此处添加构建任务的命令或脚本
-                git clone "https://github.com/arthas3014/yht-test2.git" /tmp
+                git clone https://github.com/arthas3014/yht-test2.git /tmp
             }
         }
         stage('Build') {
