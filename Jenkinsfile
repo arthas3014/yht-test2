@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Begin checkout...'
                 // 在此处添加构建任务的命令或脚本
-                git clone git@github.com:arthas3014/yht-test2.git  /tmp/
+                //git clone git@github.com:arthas3014/yht-test2.git  /tmp/
             }
         }
         stage('Build') {
@@ -21,8 +21,8 @@ pipeline {
             steps {
                 echo 'Begin Build...'
                 // 在此处添加构建任务的命令或脚本
-                cd /tmp/yht-test2
-                mvn package
+                //cd /tmp/yht-test2
+                //mvn package
             }
         }
 
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 echo 'Begin Deploy...'
                 // 在此处添加构建任务的命令或脚本
-                java -jar '/tmp/yht-test2/target/my-project-1.0.0.jar'
+                //java -jar '/tmp/yht-test2/target/my-project-1.0.0.jar'
             }
         }
     }
