@@ -1,7 +1,8 @@
 pipeline {
 agent any
 parameters {
-    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+    	choice(name: 'DeployMode', choices:'tag\nbranch', description:'Required: deploy mode')
+	string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
 }
 stages {
     stage('Example') {
